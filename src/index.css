@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Custom scroll hidden */
+.custom-scroll-hidden {
+    overflow-y: scroll; /* Tetap memungkinkan scroll */
+    scrollbar-width: thin; /* Menjaga scroll tetap tipis di Firefox */
+    scrollbar-color: transparent transparent; /* Menyembunyikan scrollbar di Firefox */
+  }
+  
+  .custom-scroll-hidden::-webkit-scrollbar {
+    width: 8px; /* Lebar scrollbar */
+  }
+  
+  .custom-scroll-hidden::-webkit-scrollbar-track {
+    background: transparent; /* Track yang transparan */
+  }
+  
+  .custom-scroll-hidden::-webkit-scrollbar-thumb {
+    background: transparent; /* Membuat thumb transparent agar tersembunyi */
+    border-radius: 10px;
+  }
+  
+  .custom-scroll-hidden::-webkit-scrollbar-thumb:hover {
+    background: transparent; /* Scroll thumb tetap tidak terlihat */
+  }
