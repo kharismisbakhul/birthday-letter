@@ -30,7 +30,7 @@ export default function App() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
-        Welcome, My Love 💖
+        Hai Sayang 💖
       </motion.h1>
 
       {/* Description Animation */}
@@ -40,9 +40,9 @@ export default function App() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.5, duration: 1 }}
       >
-        Every moment with you is a blessing. <br />
-        Today is a special day, just for you. <br />
-        Click the letter below to uncover my heart’s words. 💌
+        Setiap detik bersamamu adalah anugerah yang selalu aku syukuri <br />
+        Hari ini adalah hari yang spesial, Hari ini adalah harimu. <br />
+        Buka surat di bawah ini ya sayang 💌
       </motion.p>
 
       {/* Animated Letter Icon */}
