@@ -24,25 +24,27 @@ export default function App() {
       </div>
 
       {/* Title Animation */}
-      <motion.h1
-        className="text-6xl font-extrabold animate-bounce"
+      <motion.h3
+        className="text-3xl font-extrabold animate-bounce"
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
-        Hai Sayang 💖
-      </motion.h1>
+        Hai Manda <br/>
+        Istriku Sayangku 💖
+      </motion.h3>
 
       {/* Description Animation */}
       <motion.p
-        className="mt-4 text-xl max-w-xl leading-relaxed"
+        className="mt-4 text-md max-w-xl leading-relaxed"
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.5, duration: 1 }}
       >
-        Setiap detik bersamamu adalah anugerah yang selalu aku syukuri <br />
-        Hari ini adalah hari yang spesial, Hari ini adalah harimu. <br />
-        Buka surat di bawah ini ya sayang 💌
+        Hari ini adalah hari yang sangat spesial, <br />
+        Hari ini adalah harimu. <br />
+        Selamat bertambah Usia sayang ke 26 tahun. <br/>
+        Buka surat di bawah ini ya 💌<br/>
       </motion.p>
 
       {/* Animated Letter Icon */}

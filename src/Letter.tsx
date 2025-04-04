@@ -110,27 +110,26 @@ export default function Letter() {
 
       {/* Popup Modal */}
       {showPopup && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
+        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50 p-4">
           <motion.div
-            className="bg-white text-red-600 p-6 rounded-2xl shadow-lg text-center"
+            className="bg-white text-red-600 p-6 rounded-2xl shadow-lg text-center max-w-xs sm:max-w-md w-full max-h-[90vh] overflow-y-auto"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.3 }}
           >
-            {/* 2 Kolom dengan Border Minimalis & Centered Content */}
-            <div className="grid grid-cols-2 gap-4 border border-gray-300 p-4 rounded-lg">
-              <div className="flex flex-col items-center justify-center border-r border-gray-300 p-4">
-                <p className="text-xs font-semibold text-center">
+            {/* Content Wrapper */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 border border-gray-300 p-4 rounded-lg">
+              <div className="flex flex-col items-center justify-center border-b sm:border-b-0 sm:border-r border-gray-300 p-4">
+                <p className="text-sm font-semibold text-center">
                   Terima kasih untuk segalanya sampai saat ini. <br />
                   Terima kasih telah selalu ada di sampingku, <br />
-                  apapun kondisiku.{" "}
-                  <br />
+                  apapun kondisiku. <br />
                   Di setiap detik, di setiap langkah, <br />
                   rasa cinta dan sayangku akan selalu tumbuh.
                 </p>
               </div>
               <div className="flex flex-col items-center justify-center p-4">
-                <p className="text-xs font-semibold text-center">
+                <p className="text-sm font-semibold text-center">
                   Semoga kebahagiaan selalu menyertaimu, <br />
                   menyertai kita. <br />
                   Dan bersama-sama, <br />
@@ -141,35 +140,29 @@ export default function Letter() {
                 </p>
               </div>
             </div>
-            <br/>
-
-            {/* Foto Pernikahan */}
 
             {/* Foto dalam Dua Kolom */}
-            <div className="grid grid-cols-2 gap-4 border border-gray-300 p-4 rounded-lg">
-              {/* Kolom Kiri - Foto Akad Nikah */}
-              <div className="flex flex-col items-center justify-center border-r border-gray-300 p-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 border border-gray-300 p-4 rounded-lg">
+              <div className="flex flex-col items-center justify-center border-b sm:border-b-0 sm:border-r border-gray-300 p-4">
                 <img
                   src="/kharismanda_2.jpeg"
                   alt="Akad Nikah Kita"
-                  className="w-40 h-52 rounded-lg shadow-md object-cover"
+                  className="w-32 h-44 sm:w-40 sm:h-52 rounded-lg shadow-md object-cover"
                 />
-                <p className="mt-2 text-xs text-gray-600 italic text-center">
+                <p className="mt-2 text-xs sm:text-sm text-gray-600 italic text-center">
                   "Saat akad terucap, kita bukan lagi dua, tapi satu.  
                   Satu hati, satu tujuan, dan satu perjalanan seumur hidup.  
                   Semoga janji suci ini selalu menjadi pengingat bahwa kita akan selalu bersama,  
                   dalam suka dan duka, hingga akhir hayat."
                 </p>
               </div>
-
-              {/* Kolom Kanan - Foto Resepsi Pernikahan */}
               <div className="flex flex-col items-center justify-center p-4">
                 <img
                   src="/kharismanda_1.jpeg"
                   alt="Resepsi Pernikahan Kita"
-                  className="w-52 h-32 rounded-lg shadow-md object-cover"
+                  className="w-44 h-28 sm:w-52 sm:h-32 rounded-lg shadow-md object-cover"
                 />
-                <p className="mt-2 text-xs text-gray-600 italic text-center">
+                <p className="mt-2 text-xs sm:text-sm text-gray-600 italic text-center">
                   "Hari di mana kita berbagi kebahagiaan dengan semua orang.  
                   Semoga kebahagiaan yang kita rasakan di hari itu,  
                   selalu kita jaga dan semakin tumbuh di setiap langkah perjalanan kita.  
